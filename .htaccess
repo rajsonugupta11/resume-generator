@@ -1,0 +1,22 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Skip redirect if request is already for index.php
+RewriteCond %{THE_REQUEST} !\s/+index\.php[\s?] [NC]
+
+# Redirect all other requests to index.php if not a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Set default index file
+DirectoryIndex index.php index.html
+
+# Protect .htaccess
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+# Disable directory listing
+Options -Indexes

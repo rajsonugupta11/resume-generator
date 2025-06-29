@@ -1,0 +1,224 @@
+/* ==== General Styles ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    color: #333;
+  }
+  
+  h1, h2, p {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    color: #222;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #444;
+  }
+  
+  p {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* ==== Container Layout ==== */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+  
+  /* ==== Resume Box ==== */
+  .resume-box {
+    width: 100%;
+    max-width: 360px;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .resume-box:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* ==== Overlay for text section ==== */
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 15px;
+    backdrop-filter: blur(10px); /* 🧊 Blur Effect */
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .text-overlay h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #111;
+    font-weight: bold;
+  }
+  
+  .text-overlay p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #222;
+  }
+  
+  /* ==== Template Label ==== */
+  .template-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  /* ==== Animations ==== */
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+   /* ==== right panal icon start ==== */
+/* ==== Right Panel Styles ==== */
+/* ==== Right Panel Styles ==== */
+.right {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  border-left: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch children to full width */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* Space between items vertically */
+}
+
+.right h2 {
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#downloadBtn {
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#downloadBtn:hover {
+  background: linear-gradient(135deg, #43A047, #2E7D32);
+  transform: translateY(-2px);
+}
+
+.icon-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.icon-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+  
+  
+
+    /* ==== right panal icon End ==== */
+
+
+    /*  logout btn start============================================================================================ */
+
+.logout-btn {
+    position: fixed; /* Fixed position to keep it in the corner */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* 👈 Distance from the left */
+    background-color: #ed4956;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(237, 73, 86, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+    background-color: #d73948;
+    box-shadow: 0 6px 12px rgba(215, 57, 72, 0.6);
+    transform: translateY(-3px);
+    outline: none;
+}
+/*  logout btn ============================================================================================ */

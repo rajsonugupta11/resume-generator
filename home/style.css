@@ -1,0 +1,1043 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+}
+
+/* Layout Structure */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 35%;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.middle {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.right {
+  width: 10%;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-left: 1px solid #333;
+  overflow-y: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+h3 {
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  color: #007BFF;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #bbb;
+}
+
+/* Custom Field */
+.add-custom-field {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #4da6ff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-custom-field:hover {
+  text-decoration: underline;
+}
+
+.plus-icon {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.custom-field {
+  margin-top: 10px;
+}
+
+/* Resume Preview Container */
+.a4, .resume-container {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: black;
+  border-radius: 8px;
+  padding: 20mm;
+  width: 210mm;
+  height: auto;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+ul, ol {
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+li {
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+/* Summary Editor */
+.summary-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.summary-toolbar button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #555;
+  background: #2a2a2a;
+  color: #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+}
+
+.summary-toolbar button:hover,
+.summary-toolbar button.active {
+  background: #4da6ff;
+  border-color: #4da6ff;
+  color: #fff;
+}
+
+.summary-toolbar select,
+.summary-toolbar input[type="color"] {
+  background: #333;
+  color: #ddd;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.summary-editor, .projects-editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 150px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+}
+
+.summary-editor ul, .summary-editor ol,
+.projects-editor ul, .projects-editor ol {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.summary-editor li,
+.projects-editor li {
+  margin-bottom: 6px;
+}
+
+/* Technical Skills */
+.technical-skills {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.technical-skills h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#technicalSkillsEditor {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+#technicalSkillsEditor ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#technicalSkillsEditor li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#technicalSkillsEditor:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Utility */
+.sep {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #444;
+}
+
+
+
+/* -------- RESET & BASE -------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  
+  background-color: #1e1e1e;
+}
+
+/* -------- LAYOUT PANELS -------- */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  width: 35%;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.middle {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.right {
+  width: 10%;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-left: 1px solid #333;
+  overflow-y: auto;
+}
+
+/* -------- TYPOGRAPHY -------- */
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #000;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+h3 {
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  color: #007BFF;
+}
+
+h4 {
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* -------- INPUTS -------- */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* -------- ADD CUSTOM FIELD -------- */
+.add-custom-field {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #4da6ff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-custom-field:hover {
+  text-decoration: underline;
+}
+
+.plus-icon {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* -------- A4 + RESUME PREVIEW -------- */
+.a4 {
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: black;
+  border-radius: 8px;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #666;
+}
+
+i {
+  margin-right: 5px;
+  color: #007BFF;
+}
+
+/* -------- SEPARATOR -------- */
+.sep {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #444;
+}
+
+/* -------- SUMMARY TOOLBAR & EDITOR -------- */
+.summary-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #555;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.summary-toolbar button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #555;
+  background: #2a2a2a;
+  color: #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+#previewheadline {
+  color: black;
+}
+
+
+.summary-toolbar button:hover,
+.summary-toolbar button.active {
+  background: #4da6ff;
+  border-color: #4da6ff;
+  color: #fff;
+}
+
+.summary-toolbar .picker {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.summary-toolbar input[type="color"] {
+  background: none;
+  border: none;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.summary-toolbar select {
+  background: #333;
+  color: #ddd;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.summary-editor {
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+  background: white;
+  color: black;
+  border: 1px solid #777;
+  border-radius: 4px;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.summary-editor ul,
+.summary-editor ol {
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #000;
+}
+
+.summary-editor li {
+  margin-bottom: 6px;
+  color: #000;
+}
+
+/* -------- TECHNICAL SKILLS -------- */
+.technical-skills {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.technical-skills h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#technicalSkillsEditor {
+  font-family: Arial, sans-serif;
+  color: #444;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 150px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+
+#technicalSkillsEditor ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#technicalSkillsEditor li {
+  margin-bottom: 10px;
+  
+}
+
+#technicalSkillsEditor:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* -------- SKILLS UL FIX -------- */
+#skillsEditor ul,
+.skills ul {
+  list-style-type: disc;
+  margin-left: 2px;
+  padding-left: 8px;
+}
+
+#skillsEditor li,
+.skills li {
+  margin-bottom: 6px;
+}
+
+/* -------- PROJECTS EDITOR -------- */
+.projects-editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 150px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.projects-editor ul,
+.projects-editor ol {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #000;
+}
+
+.projects-editor li {
+  margin-bottom: 6px;
+  color: #000;
+}
+
+
+
+.project-preview-line {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.project-preview-line {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold; /* Keep this as default bold */
+  margin-bottom: 4px;
+}
+
+.project-name, .project-date {
+  /* Remove default bold styling here, so it can be overridden */
+  font-weight: normal; /* Remove bold on individual project name and date */
+}
+
+
+.project-name {
+  text-align: left;
+}
+
+.project-date {
+  text-align: right;
+}
+
+.project-desc {
+  margin-left: 0px;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-dates {
+  text-align: right;
+  min-width: 200px; /* optional for layout stability */
+}
+
+
+
+
+
+
+
+
+
+
+.project-block {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.project-preview {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+
+.project-name-input, .project-date-input, .project-desc-input {
+  font-family: Arial, sans-serif;
+
+  /* font-size hattado ya !important lagao inline style ke liye */
+  font-size: inherit;
+}
+
+
+/* Right css START---------------------------------------------------------------------------------------------------*/
+
+.right {
+  width: 10%;
+  min-width: 120px; /* Optional: ensure usable on small screens */
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px 12px; /* Reduced padding */
+  border-left: 1px solid #333;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.right h2 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Download Button */
+#downloadBtn {
+  padding: 8px 10px;
+  font-size: 14px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#downloadBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Icon Cards */
+.icon-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.icon-card {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+  font-size: 12px;
+}
+
+.icon-card:hover {
+  background-color: #444;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Global Font Size Selector */
+#globalFontSizeSelector {
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  background: #333;
+  color: #ddd;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+/* Right css ----------------------------------------------------END----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fix for dynamically added education blocks to match project block styling */
+
+.education-block {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  min-height: 150px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.education-block > div:first-child {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.education-name-input,
+.education-degree-input,
+.education-date-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 5px;
+  min-height: 30px;
+  
+  font-size: inherit;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+.education-date-input {
+  text-align: right;
+}
+
+.education-desc-input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  min-height: 100px;
+  overflow-y: auto;
+  font-size: inherit;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+}
+
+.education-block button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  height: fit-content;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.education-block button:hover {
+  background-color: #d32f2f;
+}
+
+
+style attribute {
+  display: flex;
+  justify-content: space-between;
+  font-weight: non;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+/* Style for label and dropdown */
+label[for="globalFontSelector"] {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Dropdown Styling */
+#globalFontSelector {
+  width: 100%;
+  padding: 6px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #303030;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+#globalFontSelector:hover {
+  border-color: #007BFF;
+}
+
+#globalFontSelector:focus {
+  outline: none;
+  border-color: #0056b3;
+  background-color: #303030;
+}
+/* Style for Global Font label */
+label[for="globalFontSelector"] {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;               /* White text color */
+  margin-bottom: 6px;
+  text-transform: uppercase;  /* Optional: Capital letters */
+  letter-spacing: 0.5px;
+}
+
+
+
+body {
+  font-size: var(--global-font-size);
+ 
+}
+
+.content-editable-block,
+.project-preview-line,
+.project-desc {
+  font-size: var(--global-font-size);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#languageEditor ul,
+.languages ul {
+  list-style-type: disc;
+  margin-left: 2px;
+  padding-left: 8px;
+}
+
+#certificationsEditor ul,
+.certifications ul {
+  list-style-type: disc;
+  margin-left: 2px;
+  padding-left: 8px;
+}
+
+#interestsEditor ul,
+.interests ul {
+  list-style-type: disc;
+  margin-left: 2px;
+  padding-left: 8px;
+}
+
+#achievementsEditor ul,
+.achievements ul {
+  list-style-type: disc;
+  margin-left: 2px;
+  padding-left: 8px;
+}
+
+.languages {
+  margin-bottom: 20px; /* ya jitna bhi spacing chahiye */
+}
+
+
+#educationPreviewContent {
+  margin-bottom: 20px; /* Adjust value as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#resumeArea {
+  line-height: 1.15; /* default */
+}
+
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#titleColorPicker {
+  margin: 5px 0;
+}
+
+.resume-container h3 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  text-align: left; /* default */
+}
+ .center-label {
+    display: block;
+    text-align: center;
+  }
+
+  /* Prevent text selection during drag */
+.draggable {
+  cursor: move; /* Change cursor to indicate it's draggable */
+}
+
+#deleteZone {
+  background-color: #f8d7da; /* Light red background */
+  transition: background-color 0.3s;
+}
+
+#deleteZone.dragging-over {
+  background-color: #f1c4c4; /* Highlighted color */
+}
+
+
+
+.logout-btn {
+    position: fixed; /* Fixed position to keep it in the corner */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* 👈 Distance from the left */
+    background-color: #ed4956;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(237, 73, 86, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+    background-color: #d73948;
+    box-shadow: 0 6px 12px rgba(215, 57, 72, 0.6);
+    transform: translateY(-3px);
+    outline: none;
+}
