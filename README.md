@@ -33,3 +33,13 @@ A fully functional **Resume Generator** web application that allows users to cre
 1. Clone the repo:
    ```bash
    git clone https://github.com/rajsonugupta11/resume-generator.git
+
+
+   ## 🔍 Screenshots
+
+### 🧾 Input Form:
+![Form](screenshots/input.png)
+
+### 📄 Resume Preview:
+![Preview](screenshots/preview.png)
+
