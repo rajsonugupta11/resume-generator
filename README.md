@@ -35,7 +35,6 @@ A fully functional **Resume Generator** web application that allows users to cre
    git clone https://github.com/rajsonugupta11/resume-generator.git
 
 
-   ## 🔍 Screenshots
 
 ### 🧾 Input Form:
 ![Form](screenshots/input.png)
